@@ -18,8 +18,6 @@ function getSeason(date) {
 
   else{
 
-   try{
-
     if(typeof(date) != 'object'){
     throw new ReferenceError("Invalid date!");
     }
@@ -37,12 +35,10 @@ function getSeason(date) {
     if((month==8)||(month==9)||(month==10)){
       return 'autumn'}
       }
-      catch(err){
-        return "Invalid date!";
-       }
-    }
 
 }
+
+
 
 module.exports = {
   getSeason
