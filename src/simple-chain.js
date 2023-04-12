@@ -2,7 +2,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 
 /**
  * Implement chainMaker object according to task description
- * 
+ *
  */
 const chainMaker = {
   getLength() {
@@ -26,6 +26,8 @@ const chainMaker = {
     // remove line with error and write your code here
   }
 };
+
+
 
 module.exports = {
   chainMaker
