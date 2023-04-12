@@ -16,16 +16,13 @@ function getSeason(date) {
     return 'Unable to determine the time of year!';
   }
 
-  else{
-
-    if(typeof(date) != 'object'){
-    throw new ReferenceError("Invalid date!");
+  if(Date.parse(date) === NaN){
+    throw new Error("Invalid date!");
     }
 
+  else{
     let month = date.getMonth();
-    // if(!((month>=0)&&(11>=month))){
-    //   return "Invalid date!";
-    //   }
+
     if((month==0)||(month==11)||(month==1)){
       return 'winter'}
     if((month==2)||(month==3)||(month==4)){
