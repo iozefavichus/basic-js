@@ -16,7 +16,7 @@ function getSeason(date) {
     return 'Unable to determine the time of year!';
   }
 
-  if(Date.parse(date) === NaN){
+  if(!Number.isInteger(Date.parse(date))){
     throw new Error("Invalid date!");
     }
 
